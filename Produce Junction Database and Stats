@@ -1,0 +1,80 @@
+Create a Produce Junction Database
+
+/** produce Store:
+green kale mexico (56)
+green collar greens mexico (43)
+red tomatoes california (57)
+pink apples california  (35)
+red cherries mexico (40) (98)
+green pears texas (88)
+black raisins new yok (72)
+dark prunes haiti (91)
+green broccoli kenya (19)
+yellow mangoes haiti (49)
+white strawberries mexico (46)
+blue blueberries florida (39)
+brown dates canada  ( 10)
+red jackfruit china (65)
+yellow pineapple haiti (48)
+**/
+
+CREATE TABLE produce (id INTEGER PRIMARY KEY, name TEXT, color TEXT,origin TEXT, price INTEGER);
+INSERT INTO produce VALUES ( 1, "kale","green"," mexico",56);
+INSERT INTO produce VALUES (2, " collard greens","green","mexico", 43);
+INSERT INTO produce VALUES (3,"tomatoes","red","california", 57);
+INSERT INTO produce VALUES (4, "apples","pink","california", 35);
+INSERT INTO produce VALUES (5, "cherries","red","mexico",98);
+INSERT INTO produce VALUES (6, "pears","green", "texas",88);
+INSERT INTO produce VALUES (7,"raisins","black","new york", 72);
+INSERT INTO produce VALUES (8, "prunes","dark", "haiti",91);
+INSERT INTO produce VALUES (9, "broccoli","green","kenya", 19);
+INSERT INTO produce VALUES (10, "mangoes","yellow", "haiti",49);
+INSERT INTO produce VALUES (11,"strawberries","white","mexico",46);
+INSERT INTO produce VALUES (12, "blueberries","blue","florida", 39);
+INSERT INTO produce VALUES (13, "dates","brown","canada", 10);
+INSERT INTO produce VALUES (14, "jackfruit","red","china", 65);
+INSERT INTO produce VALUES (15,"pineapple","yellow","haiti",48);
+
+
+Create a table 
+SELECT*
+FROM produce;
+SELECT * FROM produce;
+
+
+Display the database by price 
+
+SELECT * FROM produce; 
+SELECT * FROM produce ORDER BY price desc;
+
+What is the total price for all of the produce?
+SELECT SUM (price) FROM produce;
+
+Organize the table by produce and individual price in ascending order
+SELECT name FROM produce;
+SELECT name, price FROM produce ORDER BY price asc; 
+
+
+Organize the data by name and color 
+SELECT name, color FROM produce;
+
+
+Organize the data by id and price 
+SELECT id, price FROM produce;
+
+Organize the data by name and origin of each produce
+SELECT name, origin FROM produce;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
